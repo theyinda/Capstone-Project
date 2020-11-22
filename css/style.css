@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Open Sans Condensed;
+  color: #000;
+  text-rendering: optimizeLegibility;
+}
+.container{
+  max-width: 100%;
+  width: 1400px;
+  padding: 0 40px;
+}
+.navbar{
+  margin: 30px 0;
+}
+.cart-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.cart-icon .shopping-icon {
+  position: relative;
+  width: 30px;
+  height: 44px;
+  margin-right: 50px;
+}
+#item-count {
+position: absolute;
+font-size: 13px;
+font-weight: 600;
+top: 17px;
+right: 61.5px;
+color: black;
+}
+.items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.item{
+  position:relative;
+  z-index: 1;
+}
+.mybutton{
+  position: absolute;
+  z-index: 2;
+  top: 270px;
+  display: none;
+  left: 30px;
+  padding: 10px 70px;
+  border: 1.5px solid black;
+  font-weight: bold;
+  opacity: 1;
+}
+#odd{
+  padding: 10px 50px;
+  left: 20px;
+}
+#odd1{
+  padding: 10px 50px;
+  left: 20px;
+}
+#odd2{
+  padding: 10px 50px;
+  left: 20px;
+}
+#odd3{
+  padding: 10px 50px;
+  left: 20px;
+}
+#odd4{
+  padding: 10px 50px;
+  left: 20px;
+}
+#odd5{
+  padding: 10px 50px;
+  left: 20px;
+}
+#odd6{
+  padding: 10px 50px;
+  left: 20px;
+}
+.mybutton:hover{
+  background-color: black;
+  color: white;
+}
+.items .item:hover img{
+  opacity: 0.8;
+}
+.item:hover .mybutton{
+  display:block;
+}
+img {
+  vertical-align: middle;
+}
+p{
+  display: flex;
+  justify-content: space-between;
+}
+.cart-button{
+  border-style: none;
+}
+
+@media  (max-width: 855px) {
+  .cart-icon .shopping-icon {
+    margin: auto;
+   
+  }
+}
+
+@media  (max-width: 767px) {
+.items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:20px;
+}
+img{
+  display: flex;
+  flex-direction: column;
+}
+.name{
+  text-align: center;
+  justify-content: center;
+}
+}
